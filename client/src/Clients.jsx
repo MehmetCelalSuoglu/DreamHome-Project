@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+const API = import.meta.env.VITE_BACKEND_URL || "http://localhost:1521";
+
 function Clients() {
   const [addForm, setAddForm] = useState({
     clientno: "",
@@ -37,7 +39,7 @@ function Clients() {
     e.preventDefault();
     setMessage("");
     try {
-      const res = await fetch("http://localhost:1521/api/client/new", {
+      const res = await fetch(`${API}/api/client/new`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(addForm),
@@ -57,7 +59,7 @@ function Clients() {
     e.preventDefault();
     setMessage("");
     try {
-      const res = await fetch("http://localhost:1521/api/client/update", {
+      const res = await fetch(`${API}/api/client/update`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updateForm),

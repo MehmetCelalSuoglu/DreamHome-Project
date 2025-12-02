@@ -1,5 +1,8 @@
 import { useState } from "react";
 
+// Backend URL from .env (Vercel + local)
+const API = import.meta.env.VITE_BACKEND_URL || "http://localhost:1521";
+
 function Staff() {
   const [form, setForm] = useState({
     staffno: "",
@@ -28,7 +31,7 @@ function Staff() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:1521/api/staff", {
+      const res = await fetch(`${API}/api/staff`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
@@ -189,3 +192,4 @@ function Staff() {
 }
 
 export default Staff;
+

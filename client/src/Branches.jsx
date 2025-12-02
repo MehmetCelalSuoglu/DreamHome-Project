@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+const API = import.meta.env.VITE_BACKEND_URL || "http://localhost:1521";
+
 function Branches() {
   const [updateForm, setUpdateForm] = useState({
     branchno: "",
@@ -7,12 +9,14 @@ function Branches() {
     city: "",
     postcode: "",
   });
+
   const [newForm, setNewForm] = useState({
     branchno: "",
     street: "",
     city: "",
     postcode: "",
   });
+
   const [message, setMessage] = useState("");
 
   const handleChangeUpdate = (e) => {
@@ -27,7 +31,7 @@ function Branches() {
     e.preventDefault();
     setMessage("");
     try {
-      const res = await fetch("http://localhost:1521/api/branch/update", {
+      const res = await fetch(`${API}/api/branch/update`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updateForm),
@@ -47,7 +51,7 @@ function Branches() {
     e.preventDefault();
     setMessage("");
     try {
-      const res = await fetch("http://localhost:1521/api/branch/new", {
+      const res = await fetch(`${API}/api/branch/new`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newForm),
