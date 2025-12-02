@@ -213,4 +213,37 @@ body {
   border: 1px solid #ff453a;
 }
 
+/* ==== NAV LINKS (React Router buttons) ==== */
+.nav-link-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: #e5e5ea;
+  opacity: 0.7;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
 
+.nav-link-btn:hover {
+  opacity: 1;
+}
+
+.nav-link-btn.active {
+  opacity: 1;
+  border-bottom-color: #ff8a00;
+}
+
+.card-section {
+  margin-top: 2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid #2c2c2e;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  margin: 0 0 0.8rem;
+  font-weight: 600;
+}
