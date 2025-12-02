@@ -83,7 +83,7 @@ function Staff() {
             name="lname"
             value={form.lname}
             onChange={handleChange}
-            placeholder="Doe"
+            placeholder="Wick"
             required
           />
         </div>
@@ -94,7 +94,7 @@ function Staff() {
             name="position"
             value={form.position}
             onChange={handleChange}
-            placeholder="Manager"
+            placeholder="Manager / Developer"
           />
         </div>
 
@@ -114,7 +114,7 @@ function Staff() {
             name="dob"
             value={form.dob}
             onChange={handleChange}
-            placeholder="1999-01-04"
+            placeholder="YYYY-MM-DD"
           />
         </div>
 

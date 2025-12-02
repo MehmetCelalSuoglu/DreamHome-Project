@@ -107,7 +107,7 @@ function Branches() {
               name="postcode"
               value={updateForm.postcode}
               onChange={handleChangeUpdate}
-              placeholder="M5V 0V9"
+              placeholder=""
             />
           </div>
 
@@ -154,7 +154,7 @@ function Branches() {
               name="postcode"
               value={newForm.postcode}
               onChange={handleChangeNew}
-              placeholder="M5V 2B7"
+              placeholder=""
             />
           </div>
 

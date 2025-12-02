@@ -11,8 +11,8 @@ function App() {
       {/* NAVBAR */}
       <nav className="navbar">
         <div className="nav-left">
-          <span className="logo-dot" />
-          <span className="nav-title">DreamHome Real Estate</span>
+          <img src="/src/assets/DHRES.png" alt="Logo" className="logo-img" />
+          <span className="nav-title">Dream Home Real Estate System</span>
         </div>
         <div className="nav-right">
           <NavLink
@@ -63,6 +63,14 @@ function App() {
           </Routes>
         </div>
       </main>
+
+
+      <footer className="footer">
+        <p>
+          Copyright © Mehmet Celal Suoglu, Ramika Dinan, Salman Vahora, 
+          COMP214 - Project, 2025
+        </p>
+      </footer>
     </div>
   );
 }

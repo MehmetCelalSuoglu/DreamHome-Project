@@ -66,3 +66,33 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* ===== HOME PAGE CUSTOM STYLE ===== */
+
+.home-center {
+  margin: 4rem auto;
+  max-width: 700px;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.home-logo {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5));
+}
+
+.home-title {
+  font-size: 2.2rem;
+  margin-bottom: 0.7rem;
+}
+
+.home-text {
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #c7c7cc;
+}

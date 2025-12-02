@@ -44,7 +44,7 @@ function Clients() {
       });
       const data = await res.json();
       if (data.success) {
-        setMessage("Client registered successfully 🎉");
+        setMessage("Client registered successfully!");
       } else {
         setMessage("Error: " + (data.error || "Unknown error"));
       }
@@ -64,7 +64,7 @@ function Clients() {
       });
       const data = await res.json();
       if (data.success) {
-        setMessage("Client updated successfully ✅");
+        setMessage("Client updated successfully! ");
       } else {
         setMessage("Error: " + (data.error || "Unknown error"));
       }
@@ -89,7 +89,7 @@ function Clients() {
               name="clientno"
               value={addForm.clientno}
               onChange={handleChangeAdd}
-              placeholder="CR900"
+              placeholder=""
               required
             />
           </div>
@@ -99,7 +99,7 @@ function Clients() {
               name="fname"
               value={addForm.fname}
               onChange={handleChangeAdd}
-              placeholder="Test"
+              placeholder=""
             />
           </div>
           <div className="form-row">
@@ -108,7 +108,7 @@ function Clients() {
               name="lname"
               value={addForm.lname}
               onChange={handleChangeAdd}
-              placeholder="Client"
+              placeholder=""
             />
           </div>
           <div className="form-row">
@@ -144,7 +144,7 @@ function Clients() {
               name="email"
               value={addForm.email}
               onChange={handleChangeAdd}
-              placeholder="client@example.com"
+              placeholder="lebronjames@example.com"
             />
           </div>
           <div className="form-row">
@@ -153,7 +153,7 @@ function Clients() {
               name="preftype"
               value={addForm.preftype}
               onChange={handleChangeAdd}
-              placeholder="House / Flat"
+              placeholder="House / Flat / Masion"
             />
           </div>
           <div className="form-row">
@@ -162,7 +162,7 @@ function Clients() {
               name="maxrent"
               value={addForm.maxrent}
               onChange={handleChangeAdd}
-              placeholder="450"
+              placeholder="3000"
             />
           </div>
 
@@ -181,7 +181,7 @@ function Clients() {
               name="clientno"
               value={updateForm.clientno}
               onChange={handleChangeUpdate}
-              placeholder="CR900"
+              placeholder=""
               required
             />
           </div>
@@ -227,7 +227,7 @@ function Clients() {
               name="preftype"
               value={updateForm.preftype}
               onChange={handleChangeUpdate}
-              placeholder="House / Flat"
+              placeholder="House / Flat / Masion"
             />
           </div>
           <div className="form-row">
@@ -236,7 +236,7 @@ function Clients() {
               name="maxrent"
               value={updateForm.maxrent}
               onChange={handleChangeUpdate}
-              placeholder="500"
+              placeholder="4000"
             />
           </div>
 
